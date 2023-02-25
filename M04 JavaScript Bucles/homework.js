@@ -21,7 +21,7 @@ function mayoriaDeEdad(edad) {
    if (edad >= 18) {
       return "Allowed"
    } else {
-      return "Not Allowed"
+      return "Not allowed"
    }
 
 
@@ -89,7 +89,7 @@ function colors(color) {
       case "orange":
          return "This is orange";
       case color:
-       return "Color not Found";
+       return "Color not found";
 
 
    }
@@ -129,6 +129,11 @@ function esEntero(num) {
    // Ejemplo: (-10) ---> true
    // De lo contrario, retorna false.
    // Tu código:
+   if (num % 1 === 0) {
+      return true;
+   } else {
+      return false;
+   }
 }
 
 function fizzBuzz(num) {
@@ -137,15 +142,15 @@ function fizzBuzz(num) {
    // Si "num" es divisible entre 3 y 5 (ambos), retorna "fizzbuzz".
    // De lo contrario, retorna false.
    // Tu código:
-   var buz = "no es divisible entre 3 ni 5"
+   var buz = false;
    if (num % 3 === 0) {
        buz = "fizz";
    } 
    if (num % 5 === 0) {
-      buz = "buzz"
+      buz = "buzz";
    } 
    if (num % 3 === 0 && num % 5 === 0 ){
-       buz = "fizzbuz"
+       buz = "fizzbuzz";
    }
 
    return buz
@@ -167,7 +172,7 @@ function operadoresLogicos(num1, num2, num3) {
       buz = "Numero 1 es mayor y positivo";
    }
    if (num1 < 0 || num2 < 0 || num3<0) {
-      buz = "Hay Negativos";
+      buz = "Hay negativos";
    }
    if (num3 > num1 && num3 > num2) {
       buz = num3 + 1;
@@ -217,9 +222,9 @@ function esVerdadero(valor) {
    // Caso contrario, retornar "Soy falso".
    // Tu código:
    if (valor === true) {
-      return "Soy Verdadero";
+      return "Soy verdadero";
    } else {
-      return "Soy Falso";
+      return "Soy falso";
    }
 }
 
@@ -244,7 +249,18 @@ function doWhile(num) {
    // Retornar el valor final.
    // Utilizar el bucle Do-While.
    // Tu código:
+   var x = 1;
+   var temp = num;
+   while (x <= 8) {
+      temp = temp + 5;
+      x = x + 1;
+   }
+   return temp;
+
+
 }
+
+console.log(doWhile(3));
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
 module.exports = {

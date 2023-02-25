@@ -13,9 +13,9 @@ function esPositivo(num) {
       return false;
    } 
    if (num > 0) {
-      return "el numero " + num + " es positivo";
+      return "Es positivo";
    } else {
-      return "el numero " + num + " es negativo";
+      return "Es negativo";
    }
 }
 
@@ -37,33 +37,33 @@ function obtenerSaludo(nombre) {
    // Toma el string "nombre" y concatena otra string en la cadena para que tome la siguiente forma:
    // Ejemplo: "Martin" ---> "Hola Martin!"
    // Tu código:
-   return "hola " +  nombre + "!";
+   return "Hola " +  nombre + "!";
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
    // Retornar el área de un rectángulo teniendo su altura y ancho.
    // Tu código:
-   return " el area del rectangulo es : " + alto * ancho;
+   return  + alto * ancho;
 }
 
 function retornarPerimetro(lado) {
    // La función recibe como argumento la medida de un lado de un cuadrado.
    // Debes retornar su perímetro.
    // Tu código:
-   return " el perimetro es : " + lado * 4;
+   return  lado * 4;
 }
 
 function areaDelTriangulo(base, altura) {
    // Calcula el área de un triángulo y retorna el resultado.
    // Tu código:
-   return " area del triangulo es : " + (base * altura) / 2;
+   return  (base * altura) / 2;
 }
 
 function deEuroAdolar(euro) {
    // Supongamos que 1 euro equivale a 1.20 dólares.
    // Debes calcular el valor recibido como argumento pasándolo a dolares.
    // Tu código:
-   return euro / 1.20;
+   return euro * 1.20;
 }
 
 function esVocal(letra) {
@@ -75,11 +75,11 @@ function esVocal(letra) {
      return "Es vocal";
 
    } else {
-      return "dato incorrecto";
+      return "Dato incorrecto";
    }
 }
 
-console.log(areaDelTriangulo(5 , 2));
+//console.log(areaDelTriangulo(5 , 2));
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
 module.exports = {
